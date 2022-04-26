@@ -42,7 +42,7 @@ const db = require("./app/models");
 //const Role = db.role;
 //mongodb+srv://root:<password>@cluster0.dtfvd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 // connects to mongodb port
-db.mongoose.connect("mongodb://localhost/test", { useNewUrlParser: true, useUnifiedTopology: true })
+db.mongoose.connect("mongodb://localhost:27017/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     initial();
   })
