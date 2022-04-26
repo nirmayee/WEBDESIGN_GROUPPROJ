@@ -114,7 +114,7 @@ class Blog extends Component{
                     <Form onSubmit={formSubmit}>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea2">
                             <Form.Control as="textarea" 
-                            style={{backgroundColor:'#FFFFFF', color:'#ffffff', border: '0.5px solid #002934'}}
+                            style={{backgroundColor:'#FFFFFF', color:'#000000', border: '0.5px solid #002934'}}
                             rows={this.state.rowLength}
                             placeholder='Rate Us Here'
                             value={this.state.content}
