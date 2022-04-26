@@ -4,7 +4,7 @@ export class About extends Component {
   render() {
     return (
         <div>
-            OneStopWander
+            TravellingSpoon
           
         </div>
     )
