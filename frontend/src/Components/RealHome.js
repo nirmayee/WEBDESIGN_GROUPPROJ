@@ -14,8 +14,8 @@ class RealHome extends Component{
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h3>Food</h3>
-                      <p>Great Food</p>
+                      <h3>Recipes Around The World</h3>
+                      <p>Relish in the world of cuisines! </p>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -26,8 +26,8 @@ class RealHome extends Component{
                     />
 
                     <Carousel.Caption>
-                      <h3>Travel</h3>
-                      <p>Love to Travel</p>
+                      <h3>Backpackers</h3>
+                      <p>Wandering with no destination!</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -38,8 +38,8 @@ class RealHome extends Component{
                     />
 
                     <Carousel.Caption>
-                      <h3>Blog</h3>
-                      <p>Passionate Blogger</p>
+                      <h3>Reviews</h3>
+                      <p>Give your feedback to help others</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                 </Carousel>
@@ -49,8 +49,8 @@ class RealHome extends Component{
                         <Card className="home-cards">
                           <Card.Img variant="top" src="images/foodCard.png" />
                           <Card.Body>
-                            <Card.Title>Food blogging represents a complex interweaving of “foodie” or gourmet interest in cooking with those of blog writing and photography. The majority of blogs use pictures taken by the author himself/herself and some of them focus specifically on food photography.</Card.Title>
-                            <Button className="btn-go-to" variant="primary" href="#food">Go to Food</Button>
+                            <Card.Title>From sweet to spicy, from mild to got, from Thanksgiving Turkey to Christmas cookie, we present you all the recipes you would need! Experience the Italian Pasta, Mexican Burritos, New York Style Pizza and Japanese Ramen in one click! Need more recipes? Dont forget to reach out!</Card.Title>
+                            <Button className="btn-go-to" variant="primary" href="#food">Go Recipes</Button>
                           </Card.Body>
                         </Card>
                     </Col>
@@ -58,9 +58,9 @@ class RealHome extends Component{
                     <Card className="home-cards" >
                           <Card.Img variant="top" src="images/travelCardn4.jpg" />
                           <Card.Body>
-                            <Card.Title>A travel blogger, also known as travel writer or just as “blogger”, is someone who travels around the world collecting material for writing about their travel experiences, deriving income from a variety of on-line and off-line sources. Every place is worth exploring.</Card.Title>
+                            <Card.Title>Backpackers, if you are tempted by the cuisines and want to take off, come with us! Explore what your perfect getaway looks like. Explore the world with us. Rome around rome and fall in love in the city of Love! Wander along the streets of Athens and get awed by the Himalayas.</Card.Title>
                             
-                            <Button className="btn-go-to" variant="primary" href="#travel">Go to Travel</Button>
+                            <Button className="btn-go-to" variant="primary" href="#travel">Go Backpackers</Button>
                           </Card.Body>
                         </Card>
                     </Col>
@@ -68,8 +68,7 @@ class RealHome extends Component{
                     <Card className="home-cards" >
                           <Card.Img variant="top" src="images/blogCardn3.jpg" />
                           <Card.Body>
-                            <Card.Title>When you are choosing your passion blog topic, think carefully about how you might sustain this blog over several weeks. How will you introduce new topics? How will you interest and inform your readers? How will you invite readers to comment? What is
-                                the function of this blog?</Card.Title>
+                            <Card.Title> Been on a trip? Tried a new resturant? Give your feedback here! Let someone know yor experience and help them plan a perfect trip! We now offer various categories for us to provide your feedbacks and help the community. You can now review - adventure sports, group trips and also put in your tips!</Card.Title>
                             
                             <Button className="btn-go-to" variant="primary" href="#blog">Go to Blogging</Button>
                           </Card.Body>
