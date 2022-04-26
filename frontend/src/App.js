@@ -13,6 +13,8 @@ import BlogId from './Components/BlogId';
 import Footer from './Components/Footer/footer';
 import SocialMedia from './Components/SocialMedia.js/SocialMedia';
 import RealHome from './Components/RealHome';
+import About from './Components/About';
+import Contact from './Components/Contact';
 
 
 
@@ -62,6 +64,8 @@ class App extends Component{
 				<Route path ='/home' component={ RealHome} />
 				<Route path ='/travel' component={Travel} />
 				<Route path ='/food' component={Food} />
+                <Route path ='/about' component={About} />
+                <Route path ='/contact' component={Contact} />
                 <Route path ='/blog' component={Home} />
 				<Route path ='/myblogs' component={ (props) => <Blog credentials= {this.state.credentials} blogs={this.state.blogs} writeBlog = {(details)=>this.writeBlog(details)}/>} />				
                 <Route exact path="/signup" component={SignUpModal} />
