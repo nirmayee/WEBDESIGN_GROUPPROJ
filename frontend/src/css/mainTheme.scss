@@ -1,28 +1,28 @@
 body {
-    background-color: #d2e5f8 !important;
+    background-color: #d2f8de !important;
 }
 
 .navbar-main{
     background-color: #04060F !important;
-    color: #e0e8f0 !important;
+    color: #e3f0e0 !important;
 }
 
 .navbar-text{
-    color: #e0e8f0 !important;
+    color: #e3f0e0 !important;
     display: flex !important;
     justify-content: center !important;
     &:hover{
-        background-color: #e0e8f0 !important;
+        background-color: #dcecd7 !important;
         color: #04060F !important;
     }
 }
 
 .activeclass{
-    border: 1px solid #e0e8f0 !important;
+    border: 1px solid #e6f0e0 !important;
 }
 
 .navbar-title{
-    color: #e0e8f0 !important;
+    color: #e3f0e0 !important;
 }
 
 .nav-toggle{
