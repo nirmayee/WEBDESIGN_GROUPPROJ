@@ -16,8 +16,8 @@ class Blog extends Component{
             rowLength:3,
             heading:'',
             content:'',
-            postTag:'Select Tag',
-            tagsList:['All','Solo Travel','Adenture Sports','Travel Life Hacks','Backpacking','Hikes','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
+            postTag:'Choose Category',
+            tagsList:['All','Travelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
             selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
             ? JSON.parse(localStorage.getItem("user")).userName
@@ -35,7 +35,7 @@ class Blog extends Component{
             var yyyy = today.getFullYear();
             today = mm + '/' + dd + '/' + yyyy;
             var tag_new=''
-            this.state.postTag === 'Select Tag'
+            this.state.postTag === 'Choose Category'
             ? tag_new = 'Miscellaneous'
             : tag_new= this.state.postTag
             BlogServices.addPost(
@@ -57,7 +57,7 @@ class Blog extends Component{
                 
             }
             this.props.writeBlog(blog)
-            this.setState({rowLength:3,heading:'Title of the post',content:'Write something here',postTag:'Select Tag',color:'grey'})
+            this.setState({rowLength:3,heading:'Title of the post',content:'Write something here',postTag:'Choose Category',color:'grey'})
 
         }
         console.log(this.state)

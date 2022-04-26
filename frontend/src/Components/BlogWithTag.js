@@ -169,7 +169,7 @@ class  BlogWithTag extends Component{
                                                 BlogServices.addPostComment(post._id, this.props.userName,post.currentComment).then( () =>{
                                                     // window.location.reload();
                                                 },error =>{
-                                                    console.log('error commenr')
+                                                    console.log('error comment')
                                                 })
                                                 this.setState((currentState) => ({
                                                     blogs: currentState.blogs.map((c) =>{
