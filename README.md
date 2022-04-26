@@ -1,6 +1,6 @@
 # WEBDESIGN_GROUPPROJ
 
-Project - OneStopWander
+Project - TravellingSpoon
 
 Team Members -  Pratik Nakave
                 AkshaySingh Bayes
