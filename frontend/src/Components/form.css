@@ -32,7 +32,7 @@
     outline:none;
     margin-bottom: -3px;
     float: left;
-    background: #d2e5f8;
+    background: #dbf8d2;
 }
 .form_1 label {
     position: absolute;
@@ -52,7 +52,7 @@
     bottom:-1px;
     height: 100%;
     width: 100%;
-    border-bottom: 3px solid #5fa8d3;
+    border-bottom: 3px solid #5fd393;
     transform: translate(-100%);
     transition:  all 0.3s ease;
 
@@ -69,7 +69,7 @@
 .form_1 input:valid + .label-name .content-name{
     transform: translateY(-150%);
     font-size: 14px;
-    color: #5fa8d3
+    color: #95d35f
 }
 .form_1 input:focus + .label-name::after, .form_1 input:valid + .label-name::after{
     transform: translateX(0%);
