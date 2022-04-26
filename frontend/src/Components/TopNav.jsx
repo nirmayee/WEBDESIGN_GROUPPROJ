@@ -30,24 +30,29 @@ const TopNav = () => {
 					    navbarScroll
 					  >
 					    <Nav.Link activeClassName="active" exact as={NavLink} to='/' className='navbar-text' href="#home">Home</Nav.Link>
-              <Nav.Link activeClassName="active" as={NavLink} to='/food' className='navbar-text' href="#food">Food</Nav.Link>
-					    <Nav.Link activeClassName="active" as={NavLink} to='/travel' className='navbar-text' href="#travel">Travel</Nav.Link>
-              <Nav.Link activeClassName="active" as={NavLink} to='/blog' className='navbar-text' href="#blog">Blog</Nav.Link>
+              <Nav.Link activeClassName="" as={NavLink} to='/food' className='navbar-text' href="#food">Food</Nav.Link>
+					    <Nav.Link activeClassName="" as={NavLink} to='/travel' className='navbar-text' href="#travel">Travel</Nav.Link>
+              <Nav.Link activeClassName="" as={NavLink} to='/blog' className='navbar-text' href="#blog">Blog</Nav.Link>
 						{
 							localStorage.getItem('user') === null
-							? <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>Write Blog</Nav.Link>
-							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">Write Blog</Nav.Link>
+							? <Nav.Link activeClassName="" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>Write Blog</Nav.Link>
+							: <Nav.Link activeClassName="" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">Write Blog</Nav.Link>
 						}
             </Nav>
             </Col>
             <Col lg={3} className="d-flex justify-content-center">
+
+            {!localStorage.getItem('user') ?
+          <Navbar.Brand className='navbar-title' href='/'>&nbsp;Hi Guest!</Navbar.Brand> :
+          <Navbar.Brand className='navbar-title' href='/'>&nbsp;Welcome {JSON.parse(localStorage.getItem("user")).firstName}!</Navbar.Brand>}
+
             <Nav>
                         {!localStorage.getItem('user') ?
-              <Nav.Link to="/signup" activeClassName='active' exact as={NavLink} to='/signup'  href="#signup"className="button_sign navbar-text "><li>
+              <Nav.Link to="/signup" activeClassName='active' exact as={NavLink}  href="#signup"className="button_sign navbar-text "><li>
                 Sign Up
                 </li></Nav.Link> : null}
             {!localStorage.getItem('user') ?
-              <Nav.Link to="/login" activeClassName='active' eaxct as={NavLink} to='/login' href="#login" className="button_sign navbar-text"><li>
+              <Nav.Link to="/login" activeClassName='active' exact as={NavLink} href="#login" className="button_sign navbar-text"><li>
                 Login
                 </li></Nav.Link> :
               <Nav.Link to="/" onClick={logout} exact as={NavLink}  href="#logout"  className="button_sign navbar-text"><li>
@@ -57,9 +62,7 @@ const TopNav = () => {
             </Col>
 					  
 					</Navbar.Collapse>
-          {/* {!localStorage.getItem('user') ?
-          <Navbar.Brand style={{'padding-right':'50px'}} className='navbar-title' href='/'>&nbsp;Welcome Guest!</Navbar.Brand> :
-          <Navbar.Brand style={{'padding-right':'50px'}} className='navbar-title' href='/'>&nbsp;Welcome {JSON.parse(localStorage.getItem("user")).firstName}!</Navbar.Brand>} */}
+          
       
 				</Navbar>
   );

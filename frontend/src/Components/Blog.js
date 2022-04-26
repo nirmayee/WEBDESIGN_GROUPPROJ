@@ -16,8 +16,8 @@ class Blog extends Component{
             rowLength:3,
             heading:'',
             content:'',
-            postTag:'Select Category',
-            tagsList:['View All','Discovering Myself','Fun & Adventure','Travel Tips','Backpackers','Treks and Trails','Travel & Save', 'Healthy Tips','Meals & Plan','Others'],
+            postTag:'Select Tag',
+            tagsList:['All','Solo Travel','Adenture Sports','Travel Life Hacks','Backpacking','Hikes','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
             selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
             ? JSON.parse(localStorage.getItem("user")).userName
@@ -35,8 +35,8 @@ class Blog extends Component{
             var yyyy = today.getFullYear();
             today = mm + '/' + dd + '/' + yyyy;
             var tag_new=''
-            this.state.postTag === 'Select Category'
-            ? tag_new = 'Others'
+            this.state.postTag === 'Select Tag'
+            ? tag_new = 'Miscellaneous'
             : tag_new= this.state.postTag
             BlogServices.addPost(
                 tag_new,
@@ -57,7 +57,7 @@ class Blog extends Component{
                 
             }
             this.props.writeBlog(blog)
-            this.setState({rowLength:3,heading:'Title of the post',content:'Write something here',postTag:'Select Category',color:'grey'})
+            this.setState({rowLength:3,heading:'Title of the post',content:'Write something here',postTag:'Select Tag',color:'grey'})
 
         }
         console.log(this.state)
@@ -101,9 +101,9 @@ class Blog extends Component{
                         <Form>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Control
-                            style={{backgroundColor:'#ffffff', color:'#000000', border: '1px solid #000000'}}
+                            style={{backgroundColor:'#e0e8f0', color:'#00293c', border: '1px solid #00293c'}}
                             as="textarea" rows={1}
-                            placeholder='Give your blog a Tile'
+                            placeholder='Title of the blog'
                             value={this.state.heading}
                             onChange={(e)=> {this.setState({heading:e.target.value})}}
                             />
@@ -122,9 +122,9 @@ class Blog extends Component{
                     <Form onSubmit={formSubmit}>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea2">
                             <Form.Control as="textarea" 
-                            style={{backgroundColor:'#ffffff', color:'#000000', border: '1px solid #000000'}}
+                            style={{backgroundColor:'#e0e8f0', color:'#00293c', border: '1px solid #00293c'}}
                             rows={this.state.rowLength}
-                            placeholder='Express yourself here'
+                            placeholder='Content goes here'
                             value={this.state.content}
                             onClick={(e)=>{this.setState({rowLength:10})}} 
                             onChange={(e)=> {this.setState({content:e.target.value})}}/>
