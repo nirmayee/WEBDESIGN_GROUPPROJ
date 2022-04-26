@@ -67,15 +67,13 @@ class Blog extends Component{
             <Container>
                 <Row >
                     <h2 className="d-flex justify-content-center">
-                        Happy blogging
+                        We appreciate your Feedback!
                     </h2>
                 </Row>
                 <Row>
-                    <Col xs={12} md={1} className="dummy">
-                    Stuff
-                    </Col>
+                   
                     <Col xs={8} md={8}>
-                        <Form.Label><h5>Write something</h5></Form.Label>
+                        <Form.Label><h5>Feedback</h5></Form.Label>
                     </Col>
                     <Col xs={3} md={3}>
                     <Dropdown className="d-flex justify-content-center">
@@ -94,37 +92,31 @@ class Blog extends Component{
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} md={1} className="dummy">
-                        Stuff
-                    </Col>
+                    
                     <Col xs={12} md={8}>
                         <Form>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Control
-                            style={{backgroundColor:'#e0e8f0', color:'#00293c', border: '1px solid #00293c'}}
+                            style={{backgroundColor:'##FFFFFF', color:'##FFFFFF', border: '0.5px solid #002934'}}
                             as="textarea" rows={1}
-                            placeholder='Title of the blog'
+                            placeholder='Feedback Heading'
                             value={this.state.heading}
                             onChange={(e)=> {this.setState({heading:e.target.value})}}
                             />
                         </Form.Group>
                         </Form>
                     </Col>
-                    <Col xs={12} md={3} className="dummy">
-                        Stuff
-                    </Col>
+                    
                 </Row>
                 <Row className="last-row">
-                    <Col xs={12} md={1} className="dummy">
-                    Stuff
-                    </Col>
+                   
                     <Col xs={12} md={8}>
                     <Form onSubmit={formSubmit}>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea2">
                             <Form.Control as="textarea" 
-                            style={{backgroundColor:'#e0e8f0', color:'#00293c', border: '1px solid #00293c'}}
+                            style={{backgroundColor:'#FFFFFF', color:'#ffffff', border: '0.5px solid #002934'}}
                             rows={this.state.rowLength}
-                            placeholder='Content goes here'
+                            placeholder='Rate Us Here'
                             value={this.state.content}
                             onClick={(e)=>{this.setState({rowLength:10})}} 
                             onChange={(e)=> {this.setState({content:e.target.value})}}/>
@@ -137,14 +129,10 @@ class Blog extends Component{
                     </Form>
                     </Col >
                     
-                    <Col xs={12} md={3}className="dummy">
-                    Stuff
-                    </Col>
+                    
                 </Row>
                 <Row>
-                    <Col xs={12} md={1} className='dummy'>
-                        stuff
-                    </Col>
+                  
                     <Col xs={12} md={8} className="user-blogs">
                         <BlogByUser userName={this.state.userName}/>
                     </Col>
