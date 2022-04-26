@@ -40,6 +40,8 @@ const TopNav = () => {
 							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">Give Feedback</Nav.Link>
 
 						}
+              <Nav.Link activeClassName="active" exact as={NavLink} to='/about' className='navbar-text' href="#about">About</Nav.Link>
+              <Nav.Link activeClassName="active" exact as={NavLink} to='/contact' className='navbar-text' href="#contact">Contact Us</Nav.Link>
             </Nav>
             </Col>
             <Col lg={3} className="d-flex justify-content-center">
