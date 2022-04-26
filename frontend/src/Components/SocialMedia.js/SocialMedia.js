@@ -6,7 +6,7 @@ function SocialMedia() {
         <div className="footer-icon-sidebar">
             <ul className="navbar-nav">
                 <li className="nav-item inline-block">
-                    <a href="https://github.com/Kunjan28/WebDesignProject" target="_blank" aria-label="Facebook" className="nav-link text-github"><i
+                    <a href="https://github.com/" target="_blank" aria-label="Facebook" className="nav-link text-github"><i
                         className="fa fa-github"></i></a></li>
                 <li className="nav-item inline-block"><a href="https://www.facebook.com/" target="_blank" aria-label="Insagram" className="nav-link"><i className="fa fa-facebook"
                 ></i></a>

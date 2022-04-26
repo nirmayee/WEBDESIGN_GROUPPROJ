@@ -17,7 +17,7 @@ class Home extends Component{
             blogs: [],
             showBlogs: [],
             reload:1,
-            tagsList:[' View All','Discovering Myself','Fun & Adventure','Travel Tips','Backpackers','Treks and Trails','Travel & Save', 'Healthy Tips','Meals & Plan','Other'],
+            tagsList:['All','Solo Travel','Adenture Sports','Travel Life Hacks','Backpacking','Hikes','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
             selectedTag:'All',
             currentUser: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
                     ? JSON.parse(localStorage.getItem("user")).userName
