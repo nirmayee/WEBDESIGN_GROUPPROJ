@@ -32,11 +32,11 @@ const TopNav = () => {
 					    <Nav.Link activeClassName="active" exact as={NavLink} to='/' className='navbar-text' href="#home">Home</Nav.Link>
               <Nav.Link activeClassName="active" as={NavLink} to='/food' className='navbar-text' href="#food">Food</Nav.Link>
 					    <Nav.Link activeClassName="active" as={NavLink} to='/travel' className='navbar-text' href="#travel">Travel</Nav.Link>
-              <Nav.Link activeClassName="active" as={NavLink} to='/blog' className='navbar-text' href="#blog">Blog</Nav.Link>
+              <Nav.Link activeClassName="active" as={NavLink} to='/blog' className='navbar-text' href="#blog">Reviews</Nav.Link>
 						{
 							localStorage.getItem('user') === null
-							? <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>Write Blog</Nav.Link>
-							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">Write Blog</Nav.Link>
+							? <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>Give Feedback</Nav.Link>
+							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">Give Feedback</Nav.Link>
 						}
             </Nav>
             </Col>
