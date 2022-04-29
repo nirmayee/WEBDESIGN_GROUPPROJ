@@ -49,8 +49,8 @@ class RealHome extends Component{
                         <Card className="home-cards">
                           <Card.Img variant="top" src="images/foodCard.png" />
                           <Card.Body>
-                            <Card.Title>From sweet to spicy, from mild to got, from Thanksgiving Turkey to Christmas cookie, we present you all the recipes you would need! Experience the Italian Pasta, Mexican Burritos, New York Style Pizza and Japanese Ramen in one click! Need more recipes? Dont forget to reach out!</Card.Title>
-                            <Button className="btn-go-to" variant="primary" href="#food">Go Recipes</Button>
+                            <Card.Title>We have all the recipes you would need for Thanksgiving Turkey to Christmas cookies, from sweet to spicy and everything in between! With one click, you can enjoy Italian Pasta, Mexican Burritos, New York Style Pizza and Japanese Ramen. Looking for more recipes? Don't hesitate to contact us!</Card.Title>
+                            <Button className="btn-go-to" variant="primary" href="#food">Go to Food</Button>
                           </Card.Body>
                         </Card>
                     </Col>
@@ -58,9 +58,9 @@ class RealHome extends Component{
                     <Card className="home-cards" >
                           <Card.Img variant="top" src="images/travelCardn4.jpg" />
                           <Card.Body>
-                            <Card.Title>Backpackers, if you are tempted by the cuisines and want to take off, come with us! Explore what your perfect getaway looks like. Explore the world with us. Rome around rome and fall in love in the city of Love! Wander along the streets of Athens and get awed by the Himalayas.</Card.Title>
+                            <Card.Title>Come on board with us if you are tempted by the cuisines and want to take off! Let's discover what your perfect getaway looks like. Travel around the globe with us. Take a romantic walk around Rome and fall in love with the city of love! Athens' streets and Himalayan views will take your breath away.</Card.Title>
                             
-                            <Button className="btn-go-to" variant="primary" href="#travel">Go Backpackers</Button>
+                            <Button className="btn-go-to" variant="primary" href="#travel">Go to Travel</Button>
                           </Card.Body>
                         </Card>
                     </Col>
@@ -68,9 +68,9 @@ class RealHome extends Component{
                     <Card className="home-cards" >
                           <Card.Img variant="top" src="images/blogCardn3.jpg" />
                           <Card.Body>
-                            <Card.Title> Been on a trip? Tried a new resturant? Give your feedback here! Let someone know yor experience and help them plan a perfect trip! We now offer various categories for us to provide your feedbacks and help the community. You can now review - adventure sports, group trips and also put in your tips!</Card.Title>
+                            <Card.Title> Do you have any travel stories? Have you tried a new restaurant? Share your experiences here! Let someone know about your travel experience and make their trip more enjoyable! As of now, there are several categories where you can post feedbacks and provide assistance to the community. We now allow you to review adventure sports, group trips, and give us your feedback!</Card.Title>
                             
-                            <Button className="btn-go-to" variant="primary" href="#blog">Go to Blogging</Button>
+                            <Button className="btn-go-to" variant="primary" href="#blog">Go to Reviews</Button>
                           </Card.Body>
                         </Card>
                     </Col>
