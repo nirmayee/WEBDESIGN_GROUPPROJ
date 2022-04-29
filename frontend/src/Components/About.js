@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-
+import FoodGif from './Cusines/Food.gif';
+import video from './Travel/video.mp4';
 export class About extends Component {
   render() {
     return (
         <div>
           {/* video here */}
                       <h1 style={{textAlign:"center"}}>We are
-          Travelling Spoon !</h1>
+          Travelling Spoon ! <img src={FoodGif} height="160px" width="160px"  alt="Food"/></h1>
           <div class="row" style={{marginTop:"25px"}}>
             <div class="small-12 small-centered large-9 columns text-center">
               <h3>What is Traveling Spoon</h3>
@@ -29,7 +30,14 @@ export class About extends Component {
               Our mission is to find you the best foodie destinations & tours. Where to eat, what to eat, and some fun things to do when you are not eating!"
               </i>
             </h5>
+         
           </div>
+          <center>
+          <video controls="controls" autoplay="autoplay" loop="loop" style={{height:"370px",width:"1050px"}} >
+  <source src={video} type="video/mp4"/>
+  
+</video>
+          </center>
 
         </div>
     )
