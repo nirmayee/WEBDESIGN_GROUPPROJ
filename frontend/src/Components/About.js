@@ -4,6 +4,7 @@ export class About extends Component {
   render() {
     return (
         <div>
+          {/* video here */}
                       <h1 style={{textAlign:"center"}}>We are
           Travelling Spoon !</h1>
           <div class="row" style={{marginTop:"25px"}}>
