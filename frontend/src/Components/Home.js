@@ -46,7 +46,7 @@ class Home extends Component{
                 <Row>
                     <Col lg={2} md={3} sm={12}>
                         <Navbar expand='md'>
-                        <Navbar.Toggle style={{backgroundColor:'#003c02', color:'#e2f0e0'}} aria-controls="tagScroll" >View Tags</Navbar.Toggle>
+                        <Navbar.Toggle style={{backgroundColor:'#324049', color:'#e2f0e0'}} aria-controls="tagScroll" >View Tags</Navbar.Toggle>
                         <Navbar.Collapse id="tagScroll" >
                             <Nav navbarScroll>
                                 <ListGroup className="my-2" vertical>
