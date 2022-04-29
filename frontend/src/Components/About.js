@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-
+import FoodGif from './Cusines/Food.gif';
 export class About extends Component {
   render() {
     return (
         <div>
           {/* video here */}
                       <h1 style={{textAlign:"center"}}>We are
-          Travelling Spoon !</h1>
+          Travelling Spoon ! <img src={FoodGif} height="160px" width="160px"  alt="Food"/></h1>
           <div class="row" style={{marginTop:"25px"}}>
             <div class="small-12 small-centered large-9 columns text-center">
               <h3>What is Traveling Spoon</h3>
