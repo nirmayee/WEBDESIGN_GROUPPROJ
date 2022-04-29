@@ -15,7 +15,7 @@ const logout = () => {
 const TopNav = () => {
   return (
     <Navbar className='navbar-main sticky-top' bg="light" expand="lg">
-       <Navbar.Brand className='navbar-title'href='/' >&nbsp; Travelling-Spoon</Navbar.Brand>
+       <Navbar.Brand className='navbar-title' href='/'>&nbsp; Travelling-Spoon</Navbar.Brand>
        
 					{/* <Navbar.Brand href="#">Some Title</Navbar.Brand> */}
 					<Navbar.Toggle style={{marginRight:'20px'}} aria-controls="navbar-bar-bar" className="nav-toggle" />
