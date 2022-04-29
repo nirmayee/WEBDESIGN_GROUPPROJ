@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ms+Madi&display=swap');
+
 .active {
   border-bottom: 4px solid white;
+}
+
+.navbar-text {
+  margin-top: 8px;
+  font-size: 1.1em;
+}
+
+.navbar-title {
+  padding:10px 20px 10px 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6em;
+  text-decoration: solid;
 }

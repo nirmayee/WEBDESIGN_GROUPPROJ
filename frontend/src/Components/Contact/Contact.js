@@ -1,14 +1,4 @@
-// import React, { Component } from 'react'
-
-// export class Contact extends Component {
-//   render() {
-//     return (
-//       <div>Contact</div>
-//     )
-//   }
-// }
-
-// export default Contact
+import "./Contact.css";
 import React from "react";
 
 function onClickButton(event) {
@@ -20,11 +10,18 @@ function onClickButton(event) {
 function Contact() {
   return (
     <>
+
+      <div className="bck-image">
+      
+      <div className="contact-container contact-div">
+
       <div className="my-5">
-        <h1 className="text-center">Contact Us</h1>
+        <h1 className="center-text">CONTACT</h1>
       </div>
 
-      <div className="container contact-div">
+      <div className="text">
+      <h4>Hello there! We welcome your suggestions and ideas on how we can improve, and of course always love a friendly hello if you see us doing something you like. You can reach us anytime by emailing us at <a href="hello@travellingspoon.com">hello@travellingspoon.com</a> or filling out the form below.</h4>
+      </div>
         <div className="row">
           <div className="col-md-6 col-10 mx-auto">
             <form id="my_form">
@@ -38,16 +35,16 @@ function Contact() {
                 />
               </div>
               <div className="form-group pt-3">
-                <label for="exampleFormControlInput1">Contact Number</label>
+                <label for="exampleFormControlInput1">Phone Number</label>
                 <input
                   type="text"
                   className="form-control"
                   id="exampleFormControlInput1"
-                  placeholder="+1-"
+                  placeholder="+1-999-888-7766"
                 />
               </div>
               <div className="form-group pt-3">
-                <label for="exampleFormControlInput1">Email address</label>
+                <label for="exampleFormControlInput1">Email ID</label>
                 <input
                   type="email"
                   className="form-control"
@@ -58,7 +55,7 @@ function Contact() {
 
               <div className="form-group pt-3">
                 <label for="exampleFormControlTextarea1">
-                  Type your Message Here
+                  Comments
                 </label>
                 <textarea
                   className="form-control"
@@ -74,11 +71,13 @@ function Contact() {
                   className="btn btn-outline-primary"
                   type="submit"
                 >
-                  Submit form
+                  SUBMIT
                 </button>
               </div>
+              <br />
             </form>
           </div>
+        </div>
         </div>
       </div>
     </>

@@ -14,7 +14,7 @@ import Footer from './Components/Footer/footer';
 import SocialMedia from './Components/SocialMedia.js/SocialMedia';
 import RealHome from './Components/RealHome';
 import About from './Components/About';
-import Contact from './Components/Contact';
+import Contact from './Components/Contact/Contact'
 
 
 

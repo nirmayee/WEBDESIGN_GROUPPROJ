@@ -4,7 +4,7 @@ export class About extends Component {
   render() {
     return (
         <div>
-            TravellingSpoon
+            Travelling-Spoon
           
         </div>
     )

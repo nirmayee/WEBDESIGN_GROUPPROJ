@@ -17,7 +17,7 @@ class Home extends Component{
             blogs: [],
             showBlogs: [],
             reload:1,
-            tagsList:['All','Solo Travel','Adenture Sports','Travel Life Hacks','Backpacking','Hikes','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
+            tagsList:['All','Solo Travel','Adventure Sports','Travel Life Hacks','Backpacking','Hikes','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
             selectedTag:'All',
             currentUser: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
                     ? JSON.parse(localStorage.getItem("user")).userName
@@ -46,7 +46,7 @@ class Home extends Component{
                 <Row>
                     <Col lg={2} md={3} sm={12}>
                         <Navbar expand='md'>
-                        <Navbar.Toggle style={{backgroundColor:'#003c02', color:'#e2f0e0'}} aria-controls="tagScroll" >View Tags</Navbar.Toggle>
+                        <Navbar.Toggle style={{backgroundColor:'#324049', color:'#e2f0e0'}} aria-controls="tagScroll" >View Tags</Navbar.Toggle>
                         <Navbar.Collapse id="tagScroll" >
                             <Nav navbarScroll>
                                 <ListGroup className="my-2" vertical>
