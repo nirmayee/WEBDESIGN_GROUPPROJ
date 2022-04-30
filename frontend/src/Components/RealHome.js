@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { Carousel,Container, Card, Col, Button, Row } from 'react-bootstrap'
-import './blogsWrite.scss'
+import './blogsWrite.scss';
+import "./RealHome.css";
 
 class RealHome extends Component{
     render(){
@@ -45,30 +46,30 @@ class RealHome extends Component{
                 </Carousel>
                 <Container>
                 <Row>
-                    <Col xs={12} lg={4}>
+                    <Col xs={12} lg={4} md={6}>
                         <Card className="home-cards">
-                          <Card.Img variant="top" src="images/foodCard.png" style={{height:'312px',width:'312px'}} />
-                          <Card.Body>
+                          <Card.Img className='card-img' variant="top" src="images/foodCard.png" />
+                          <Card.Body className='card-body'>
                             <Card.Title>We have all the recipes you would need for Thanksgiving Turkey to Christmas cookies, from sweet to spicy and everything in between! With one click, you can enjoy Italian Pasta, Mexican Burritos, New York Style Pizza and Japanese Ramen. Looking for more recipes? Don't hesitate to contact us!</Card.Title>
                             <Button className="btn-go-to" variant="primary" href="#food">Go to Food</Button>
                           </Card.Body>
                         </Card>
                     </Col>
-                    <Col xs={12} lg={4}>
+                    <Col xs={12} lg={4} md={6}>
                     <Card className="home-cards" >
-                          <Card.Img variant="top" src="images/travelCardn4.jpg" style={{height:'312px',width:'312px'}} />
-                          <Card.Body>
+                          <Card.Img className='card-img' variant="top" src="images/travelCardn4.jpg" />
+                          <Card.Body className='card-body'>
                             <Card.Title>Come on board with us if you are tempted by the cuisines and want to take off! Let's discover what your perfect getaway looks like. Travel around the globe with us. Take a romantic walk around Rome and fall in love with the city of love! Athens' streets and Himalayan views will take your breath away.</Card.Title>
                             
                             <Button className="btn-go-to" variant="primary" href="#travel">Go to Travel</Button>
                           </Card.Body>
                         </Card>
                     </Col>
-                    <Col xs={12} lg={4}>
+                    <Col xs={12} lg={4} md={6}>
                     <Card className="home-cards" >
-                          <Card.Img variant="top" src="images/blogCardn3.jpg" style={{height:'312px',width:'312px'}} />
-                          <Card.Body>
-                            <Card.Title> Do you have any travel stories? Have you tried a new restaurant? Share your experiences here! Let someone know about your travel experience and make their trip more enjoyable! As of now, there are several categories where you can post feedbacks and provide assistance to the community. We now allow you to review adventure sports, group trips, and give us your feedback!</Card.Title>
+                          <Card.Img className='card-img' variant="top" src="images/blogCardn3.jpg" />
+                          <Card.Body className='card-body'>
+                            <Card.Title> Do you have any travel stories? Let someone know about your travel experience and make their trip more enjoyable! There are several categories where you can post feedbacks and provide assistance to the community. We now allow you to review adventure sports, group trips, and give us your feedback!</Card.Title>
                             
                             <Button className="btn-go-to" variant="primary" href="#blog">Go to Reviews</Button>
                           </Card.Body>

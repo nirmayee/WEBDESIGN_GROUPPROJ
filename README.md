@@ -24,7 +24,7 @@ Points covered -
 1. Website is responsive (Desktop and mobile friendly)
 2. Number of roles added - (Admin and user)
 3. Login/Registration form - Password validation and encryption enabled
-4. Number of pages - 7
+4. Number of pages - 9
 5. Session Management - Maintained session by local storage
 6. Support for external APIs - 
    1. api.spoonacular.com - for recipies list
